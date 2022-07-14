@@ -1,0 +1,14 @@
+<h1>This is child</h1>
+{{myInputMsg}}
+
+{{getPrice}}
+
+<br>
+<div *ngFor="let student of myStudents">
+    {{student}}
+</div>
+<hr>
+<p>{{".".repeat(12)}}</p>
+<label for="item-input">Add an Item:</label>
+<input type='text' id='item-input' #newItem>
+<button type='button' (click)="addNewItem(newItem.value)">Add Item</button>

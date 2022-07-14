@@ -1,0 +1,30 @@
+<p>Property Child Component</p>
+
+<h3>Interpolation Example</h3>
+<h3>Username:{{user.name}}</h3>
+<h3>Email :{{user.email}}</h3>
+
+
+<div>
+    <form>
+        Display value in input control
+        <input type="text" [value]="name" />
+        <input type="text" [value]="profession" />
+        <br>
+    </form>
+</div>
+
+<h1>Event Binding</h1>
+<div>
+    <div>
+        <h2>Demo of Event Binding in Angular 8</h2>
+        <input type="button" value="showAlert" class="btn-block" (click)="showAlert()" />
+        <br><br><br>
+        <input type="button" value="showCount" class="btn-block" (click)="showCount()" />
+    </div>
+</div>
+<hr>
+<h1>Two Way Binding</h1>
+<label for="email">Email:</label>
+<input type='text' [(ngModel)]='user.email'>
+{{user.email}}
